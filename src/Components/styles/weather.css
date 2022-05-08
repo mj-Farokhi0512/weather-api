@@ -1,0 +1,14 @@
+body {
+  background-color: #f7f7f7 !important;
+}
+
+.weather {
+  max-width: 500px;
+  background-color: white;
+  height: 700px;
+  margin: 100px auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc;
+}
+/*# sourceMappingURL=weather.css.map */
