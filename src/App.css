@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "fontawesome";
+  src: url("./fonts/fontawesome-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ir_sans";
+  src: url("./fonts/ir_sans.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

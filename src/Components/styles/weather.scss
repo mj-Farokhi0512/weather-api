@@ -1,12 +1,102 @@
 body{
     background-color: #f7f7f7 !important;
+    direction: rtl;
 }
 
 .weather{
-    max-width: 500px;
-    background-color: white;
-    height: 700px;
+    max-width: 460px;
+    height: 800px;
+    background-color: #d8f0f0;
     margin: 100px auto;
-    border-radius: 5px;
+    border-radius: 40px;
+    overflow: hidden;
     box-shadow: 0 0 10px #ccc;
+    font-family: ir_sans;
+    user-select: none;
+}
+
+@keyframes fadeForecast {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes currentAnim{
+    0%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes forecastAnim{
+    0%{
+        transform: scaleY(1.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes slideInTop{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 100px;
+    }
+}
+
+@keyframes slide-in-top{
+    from{
+        top: -100%;
+        opacity: 0;
+    }
+    to{
+        top: 25px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp{
+    0%{
+        top: 100px;
+    }
+    100%{
+        top: -100px;
+    }
+}
+
+.slide-in-left{
+    animation: slide-in-left 0.4s forwards;
+}
+
+@keyframes slide-in-left{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right{
+    animation: slide-in-right 0.4s forwards;
+}
+
+@keyframes slide-in-right{
+    from{
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

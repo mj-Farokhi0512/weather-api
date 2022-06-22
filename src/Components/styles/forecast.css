@@ -1,0 +1,28 @@
+.forecast {
+  border-radius: 15px;
+  color: white;
+  margin: 10px 15px;
+  background-color: #238080;
+  -webkit-box-shadow: 0 1px 6px #175353;
+          box-shadow: 0 1px 6px #175353;
+  cursor: pointer;
+  -webkit-animation: fadeForecast 0.4s;
+          animation: fadeForecast 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.forecast:hover {
+  background-color: #33cccc;
+  -webkit-box-shadow: 0 2px 5px #33cccc;
+          box-shadow: 0 2px 5px #33cccc;
+}
+
+.current-forecast {
+  background-color: #33cccc;
+}
+
+.next, .previous {
+  cursor: pointer;
+}
+/*# sourceMappingURL=forecast.css.map */

@@ -1,0 +1,85 @@
+@import "./Modules/variable";
+
+.current-weather{
+    position: relative;
+    text-align: center;
+    background-color: #153030;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 5px 10px #4c9191;
+    color: white;
+    user-select: none;
+    animation: currentAnim 0.2s forwards;
+    transform-origin: top center;
+
+
+    button{
+        color: inherit;
+    }
+
+    .location{
+        font-weight: bolder;
+        font-size: $font_location_size;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .btn-update{
+        border: none;
+        background-color: #89c9c9;
+        border-radius: 20px;
+        padding: 5px 20px;
+        margin: 20px;
+        font-weight: bold;
+        box-shadow: 0 5px 8px rgba($color: #000000, $alpha: 0.4);
+        transition: 0.4s;
+
+        &:hover{
+            background-color: #437e7e;
+        }
+    }
+
+    .condition-group{
+        border-bottom: 2px solid;
+    }
+
+    .btn-search{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        background-color: #89c9c9;
+        border-radius: 50%;
+        z-index: 100;
+        border: none;
+        animation: slide-in-top 0.3s forwards;
+    }
+
+    .btn-search::after{
+        content: "\f002";
+        font-family: "fontawesome";
+        font-size: 24px;
+        color: white;
+        text-shadow: 2px 2px 5px #888;
+    }
+
+    .search-box{
+        width: 300px;
+        position: absolute;
+        z-index: 1000;
+        top: 100px;
+        left: calc(50% - 150px);
+    }
+}
+
+.slide-down{
+    animation: slideInTop 0.4s forwards;
+}
+
+.slide-up{
+    animation: slideUp 0.4s forwards;
+}
+
+.blur{
+    filter: blur(5px);
+}

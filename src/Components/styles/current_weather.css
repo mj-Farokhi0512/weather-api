@@ -1,0 +1,95 @@
+.current-weather {
+  position: relative;
+  text-align: center;
+  background-color: #153030;
+  border-radius: 0 0 60px 60px;
+  -webkit-box-shadow: 0 5px 10px #4c9191;
+          box-shadow: 0 5px 10px #4c9191;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation: currentAnim 0.2s forwards;
+          animation: currentAnim 0.2s forwards;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
+.current-weather button {
+  color: inherit;
+}
+
+.current-weather .location {
+  font-weight: bolder;
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.current-weather .btn-update {
+  border: none;
+  background-color: #89c9c9;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin: 20px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.current-weather .btn-update:hover {
+  background-color: #437e7e;
+}
+
+.current-weather .condition-group {
+  border-bottom: 2px solid;
+}
+
+.current-weather .btn-search {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  background-color: #89c9c9;
+  border-radius: 50%;
+  z-index: 100;
+  border: none;
+  -webkit-animation: slide-in-top 0.3s forwards;
+          animation: slide-in-top 0.3s forwards;
+}
+
+.current-weather .btn-search::after {
+  content: "\f002";
+  font-family: "fontawesome";
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 5px #888;
+}
+
+.current-weather .search-box {
+  width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 100px;
+  left: calc(50% - 150px);
+}
+
+.slide-down {
+  -webkit-animation: slideInTop 0.4s forwards;
+          animation: slideInTop 0.4s forwards;
+}
+
+.slide-up {
+  -webkit-animation: slideUp 0.4s forwards;
+          animation: slideUp 0.4s forwards;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+/*# sourceMappingURL=current_weather.css.map */

@@ -1,10 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  useQuer,
+  gql,
+} from "@apollo/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const Client = new ApolloClient({
+//   uri: `http://api.weatherapi.com/v1/forecast.json?key=dd2950216df846d7ae250508221505&q=ilam&days=3&aqi=yes&alerts=no`,
+//   cache: new InMemoryCache(),
+// });
+
+// Client.query({
+//   query: gql`
+//     {
+//       location {
+//         name
+//       }
+//     }
+//   `,
+// }).then((response) => console.log(response));
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />

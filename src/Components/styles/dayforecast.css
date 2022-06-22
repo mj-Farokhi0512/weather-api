@@ -1,0 +1,44 @@
+.day-forecast {
+  position: relative;
+  color: white;
+  background-color: #153030;
+  border-radius: 0 0 60px 60px;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+  -webkit-animation: forecastAnim 0.2s forwards;
+          animation: forecastAnim 0.2s forwards;
+}
+
+.day-forecast .icon-weather {
+  width: 100%;
+}
+
+.day-forecast .day-temp {
+  display: block;
+  margin-top: 15%;
+}
+
+.day-forecast .back-to-current {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  height: 50px;
+  width: 50px;
+  background-color: #89c9c9;
+  border-radius: 50%;
+  border: none;
+  z-index: 100;
+  -webkit-animation: slide-in-top 0.3s forwards;
+          animation: slide-in-top 0.3s forwards;
+}
+
+.day-forecast .back-to-current::after {
+  content: "\f053";
+  font-family: "fontawesome";
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px 5px #888;
+}
+/*# sourceMappingURL=dayforecast.css.map */
